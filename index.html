@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body class="container">
   <div></div>
   <div id="content">
     <h1 id="title">freeCodeCamp Survey Form</h1>
@@ -42,7 +42,65 @@
               <option>Other</option>
             </select>
           </div>
-    </form>
+          <div class="form-group">
+            <h3>Would you recommend freeCodeCamp to a friend?</h3>
+            <div class="radio">
+              <label><input type="radio" name="optradio" checked>Option 1</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">Option 2</label>
+            </div>
+            <div class="radio disabled">
+              <label><input type="radio" name="optradio" disabled>Option 3</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Which option best describes your current role?</label>
+            <select class="form-control" id="dropdown">
+              <option value="select" disabled selected>Select current role</option>
+              <option>challenges</option>
+              <option>projects</option>
+              <option>community</option>
+              <option>open source</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <h3>What would you like to see improved? (Check all that apply)</h3>
+
+            <div class="checkbox">
+              <label><input type="checkbox" value="">front-end projects</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">back-end projects</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="" disabled>data visualisation</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="" disabled>challenges</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="" disabled>Open source community</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="" disabled>gitter help rooms</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="" disabled>videos</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="" disabled>city meet ups</label>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <button class="primary" id="submit"> submitt </button>
+      </form>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
